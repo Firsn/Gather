@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Saila</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="collapse_button_text">Collapse</string>
+    <string name="colors_expandable_selector_title">COLORS</string>
+</resources>

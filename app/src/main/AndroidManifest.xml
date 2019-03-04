@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saila">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".SApplication"
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".view.activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".view.activity.Ltp"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        </activity>
+        <activity android:name=".view.activity.DList"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+
+        <activity android:name=".view.activity.RxJavaActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+
+        <activity android:name=".view.activity.AnimationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+        <activity android:name=".view.activity.ServiceActivity1"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+
+        <activity android:name=".view.activity.ServiceActivity2"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+
+        <activity android:name=".view.activity.IpcActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+        <activity android:name=".view.activity.IpcDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+        <activity android:name=".view.activity.ParcelableActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+        <activity android:name=".view.activity.ExpandableSelectorActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+
+        <service android:name=".service.SlaService1"></service>
+        <service android:name=".service.SlaService2"></service>
+
+
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="371f40423d" />
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="MD" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="false" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="false" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="A585W1QHACWF" />
+
+    </application>
+
+</manifest>

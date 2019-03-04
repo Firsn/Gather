@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+        <variable
+            name="vm"
+            type="com.saila.viewmodel.VmIpcActivity"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="IPC" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="To Detail"
+            android:layout_margin="2dp"
+            android:id="@+id/btn_ia"
+            android:onClick="@{()-> vm.toDetail() }"/>
+    </LinearLayout>
+</layout>

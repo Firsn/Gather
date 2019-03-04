@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="vmItem"
+            type="com.saila.viewmodel.item.VmItemDList"/>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_dlist"
+        android:layout_marginRight="5dp"
+        tools:imageUrl="@{vmItem.avatar()}"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dlist_username"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:text="@{vmItem.username()}"
+        android:layout_toRightOf="@id/img_dlist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dlist_time"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:text="@{vmItem.ctime()}"
+        android:layout_toRightOf="@id/img_dlist"
+        android:layout_alignBottom="@id/img_dlist"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dlist_subject"
+        android:textSize="15sp"
+        android:textColor="#666666"
+        android:layout_marginTop="5dp"
+        android:text="@{vmItem.subject()}"
+        android:layout_below="@id/img_dlist"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dedede"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/tv_dlist_subject"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
+</layout>

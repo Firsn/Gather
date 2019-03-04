@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="vm"
+            type="com.saila.viewmodel.VmAnimationActivity"/>
+    </data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tv_animation"
+        android:visibility="visible"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0000"
+        android:id="@+id/btn_animationout"
+        android:layout_alignParentBottom="true"
+        android:onClick="@{()->vm.commandOut()}"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff0000"
+        android:id="@+id/btn_animationin"
+        android:layout_above="@id/btn_animationout"
+        android:onClick="@{()->vm.commandIn()}"
+        android:layout_marginBottom="2dp"
+        />
+
+</RelativeLayout>
+</layout>
