@@ -123,7 +123,10 @@ public class HomeActivity extends AppCompatActivity
             mUtil.intentToActivity(this,null,new ParcelableActivity());
         } else if(id == R.id.expandableSelector){
             mUtil.intentToActivity(this,null,new ExpandableSelectorActivity());
+        } else if(id == R.id.animationactivity2){
+            mUtil.intentToActivity(this,null,new AnimationActivity2());
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

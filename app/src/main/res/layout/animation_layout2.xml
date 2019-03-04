@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="vm"
+            type="com.saila.viewmodel.VmAnimationActivity2"/>
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnaa21"
+        android:onClick="@{ ()-> vm.task1()}"
+        android:text="1"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnaa22"
+        android:onClick="@{ ()-> vm.task2()}"
+        android:text="2"/>
+
+</LinearLayout>
+</layout>

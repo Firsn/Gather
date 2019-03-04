@@ -10,7 +10,7 @@ import android.view.animation.Transformation;
  * height. This Animation changes the width and the height associated to the widget and invokes
  * requestLayout() method to redraw it.
  */
-class ResizeAnimation extends Animation {
+public class ResizeAnimation extends Animation {
 
   private static final long DEFAULT_DURATION_IN_MS = 250;
 
@@ -20,7 +20,7 @@ class ResizeAnimation extends Animation {
   private float toWidth;
   private float fromWidth;
 
-  ResizeAnimation(View view, float toWidth, float toHeight) {
+  public ResizeAnimation(View view, float toWidth, float toHeight) {
     this.toHeight = toHeight;
     this.toWidth = toWidth;
     this.fromHeight = view.getHeight();

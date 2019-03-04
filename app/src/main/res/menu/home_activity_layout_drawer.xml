@@ -68,6 +68,11 @@
                 android:id="@+id/expandableSelector"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Expandable Selector" />
+
+            <item
+                android:id="@+id/animationactivity2"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Animation Activity 2" />
         </menu>
     </item>
 

@@ -79,6 +79,9 @@
         <activity android:name=".view.activity.ExpandableSelectorActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
+        <activity android:name=".view.activity.AnimationActivity2"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"></activity>
 
         <service android:name=".service.SlaService1"></service>
         <service android:name=".service.SlaService2"></service>

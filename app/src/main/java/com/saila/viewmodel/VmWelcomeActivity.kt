@@ -43,7 +43,7 @@ class VmWelcomeActivity(context2:Context,mUtil2:Util?,cls:WelcomeActivity) :Base
 //                    }
 //                },1000)
 
-         cdt=object:CountDownTimer(5000,1000){
+         cdt=object:CountDownTimer(2000,1000){
             override fun onFinish() {
                 handler.sendEmptyMessage(1);
             }
