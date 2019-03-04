@@ -42,11 +42,11 @@ class VmAnimationActivity2(var c: Context, var u:Util?):BaseViewModel<AnimationA
         return objectAnimator
     }
 
-    private fun createResizeAnimation(toWidth: Float,toHeight: Float): ResizeAnimation {
-        var interpolator: Interpolator= AnimationUtils.loadInterpolator(context, android.R.anim.decelerate_interpolator);
-        val resizeAnimation = ResizeAnimation(container, toWidth, toHeight)
-        resizeAnimation.interpolator=interpolator
-        resizeAnimation.duration=((animationDuration * CONTAINER_ANIMATION_OFFSET).toLong())
-        return resizeAnimation
-    }
+//    private fun createResizeAnimation(toWidth: Float,toHeight: Float): ResizeAnimation {
+//        var interpolator: Interpolator= AnimationUtils.loadInterpolator(context, android.R.anim.decelerate_interpolator);
+//        val resizeAnimation = ResizeAnimation(container, toWidth, toHeight)
+//        resizeAnimation.interpolator=interpolator
+//        resizeAnimation.duration=((animationDuration * CONTAINER_ANIMATION_OFFSET).toLong())
+//        return resizeAnimation
+//    }
 }

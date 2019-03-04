@@ -125,15 +125,21 @@ class ExpandableView:FrameLayout{
     }
 
     fun expand() {
-        expandableSelectorAnimator.expand(ExpandableSelectorAnimator.Listener { notifyExpanded() })
+        mExpandableAnimator.expand(listener = object:ExpandableAnimator.Listener{
+            override fun onAnimationFinished() {
+                notifyExpanded()
+            }
+        })
         notifyExpand()
         updateBackground()
     }
 
     fun collapse() {
-        expandableSelectorAnimator.collapse(ExpandableSelectorAnimator.Listener {
-            updateBackground()
-            notifyCollapsed()
+        mExpandableAnimator.collapse(listener = object:ExpandableAnimator.Listener{
+            override fun onAnimationFinished() {
+                updateBackground()
+                notifyCollapsed()
+            }
         })
         notifyCollapse()
     }

@@ -154,7 +154,7 @@ open class ExpandableAnimator(
         return resizeAnimation
     }
 
-    private fun playAnimatorsTogether(animations: Array<Animator>) {
+    private fun playAnimatorsTogether(animations: Array<Animator?>) {
         val animatorSet = AnimatorSet()
         animatorSet.playTogether(*animations)
         animatorSet.start()

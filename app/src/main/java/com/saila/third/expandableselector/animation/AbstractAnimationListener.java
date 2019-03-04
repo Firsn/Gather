@@ -2,7 +2,7 @@ package com.saila.third.expandableselector.animation;
 
 import android.view.animation.Animation;
 
-abstract class AbstractAnimationListener implements Animation.AnimationListener {
+public abstract class AbstractAnimationListener implements Animation.AnimationListener {
 
   @Override public void onAnimationStart(Animation animation) {
 

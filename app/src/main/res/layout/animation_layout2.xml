@@ -26,5 +26,12 @@
         android:onClick="@{ ()-> vm.task2()}"
         android:text="2"/>
 
+
+    <Button
+        style="@style/ExpandableItemStyle"
+        android:id="@+id/btnaa23"
+        android:onClick="@{ ()-> vm.task2()}"
+        android:text="3"/>
+
 </LinearLayout>
 </layout>
